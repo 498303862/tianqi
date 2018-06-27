@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport"content="width=device-width">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/rem.js"></script>
+	<title>天气预报</title>
+</head>
+<body>
+	<div class="tu">
+		<p class="chengshi">太远</p>
+		<p class="du">38°</p>
+		<p class="yun">多云</p>
+		<p class="feng">三级风</p>
+		<p class="sss">光芒透过云缝，洒向大地~</p>
+	</div>
+	<div class="box">
+            <p class="shusu">55</p>
+            <p class="liang">良</p>
+         </div>
+	<div class="top">
+		<div class="zuo">
+			<div class="shang">
+				<p class="jint">今天</p>
+				<p class="wendu" id="du">36/24°</p>
+			</div>
+			<div class="xia">
+				<p class="duoyun" id="tianqi">多云转晴</p>
+				<img src="img/1.png" alt="" class="log" id="topic">
+			</div>
+		</div>
+		<div class="you">
+			<div class="shang">
+				<p class="jint">明天</p>
+				<p class="wendu" id="wendu">36/24°</p>
+			</div>
+			<div class="xia">
+				<p class="duoyun" id="mingtian">多云转晴</p>
+				<img src="img/1.png" alt="" class="log" id="mopic">
+			</div>
+		</div>
+	</div>
+	<ul class="zhong">
+		<!-- <li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li>
+		<li class="item">
+			<p class="tex">16:00</p>
+			<img src="img/10.png" alt="" class="icon">
+			<p class="pos">35°</p>
+		</li> -->
+	</ul>
+	<ul class="zuixia">
+		<!-- <li class="itemm">
+			<p class="riqi">06/27</p>
+			<p class="ying">阴</p>
+			<img src="img/1.png" alt="" class="img">
+			<p class="dushu">38°</p>
+			<p class="dushu">38°</p>
+			<img src="img/1.png" alt="" class="img">
+			<p class="wind">东风</p>
+			<p class="sanji">3级</p>
+		</li> -->
+		
+		
+	</ul>
+</body>
+</html>
